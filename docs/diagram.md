@@ -1,6 +1,6 @@
-# Diagram Examples
+# Diagram 
 
-## Flowcharts
+## Classes
 
 ```mermaid
 ---
@@ -210,19 +210,4 @@ direction TB
 	style ReportingNode fill:#fff5e6,stroke:#ff8c00,stroke-width:2px
 
 	style WeavingInspection fill:#e6f7ff,stroke:#0366d6,stroke-width:2px
-```
-
-## Sequence Diagrams
-
-```mermaid
-sequenceDiagram
-  autonumber
-  Server->>Terminal: Send request
-  loop Health
-      Terminal->>Terminal: Check for health
-  end
-  Note right of Terminal: System online
-  Terminal-->>Server: Everything is OK
-  Terminal->>Database: Request customer data
-  Database-->>Terminal: Customer data
 ```
