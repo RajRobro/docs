@@ -1,0 +1,624 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://sitename.example/diagram/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>Diagram - Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.e53b48f4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i,700,700i%7CRed+Hat+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Merriweather Sans";--md-code-font:"Red Hat Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#diagram" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Docs" class="md-header__button md-logo" aria-label="Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Diagram
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Docs" class="md-nav__button md-logo" aria-label="Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Software Development
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Diagram
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Diagram
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="diagram">Diagram</h1>
+<h2 id="classes">Classes</h2>
+<pre class="mermaid"><code>---
+config:
+  layout: dagre
+---
+classDiagram
+direction TB
+    class EventData {
+        +~EventData()
+    }
+    class WidthCheck {
+        +float maxWidth
+        +float minWidth
+    }
+    class ActionEventTracker {
+        +ActionEventTracker()
+        +bool shouldTriggerEvent()
+        +void triggerEvent()
+        +void setCooldown(unsigned long long cooldownMillis)
+    }
+    class ActionEventManager {
+        +void addEvent(EventType event)
+        +bool shouldTriggerEvent(EventType event)
+        +void triggerEvent(EventType event)
+        +void setEventData(EventType event, std::shared_ptr data)
+    }
+    class EventType {
+        IMAGE_SAVER_HEALTH_CHECK
+        SYSTEM_RUNNING_IN_FAULT
+        ROLL_START_BUTTON
+        UNKNOWN
+    }
+    class EventTypeUtils {
+        +static EventType getEventTypeForErrorCode(std::string error_code)
+    }
+    class BaseType {
+        +virtual json toJSON() = 0
+        +virtual bool loadJSON(json type) = 0
+    }
+    class Job {
+    }
+    class Roll {
+    }
+    class RollWidth {
+    }
+    class Speed {
+    }
+    class Defect {
+    }
+    class CameraConfig {
+    }
+    class GroupConfig {
+    }
+    class CameraManager {
+        +CameraParams getCameraParams()
+        +WidthParams getWidthParams()
+        +bool initCamera()
+    }
+    class CameraNode {
+        +void startLooping()
+        +void processAndPublishImage()
+    }
+    class CameraParams {
+    }
+    class WidthParams {
+    }
+    class GrabedImage {
+    }
+    class CameraHighSpeedSimulator {
+    }
+    class DefectsProcessor {
+    }
+    class Annotation {
+    }
+    class PointXY {
+    }
+    class RobroCameraAbstractClass {
+    }
+    class Recipe {
+        +Camera camera
+        +NN nn
+    }
+    class Camera {
+    }
+    class NN {
+    }
+    class Group {
+    }
+    class Yolov8 {
+    }
+    class PLCCommunication {
+        +bool initPLC()
+        +uint64_t getRunningMeterMM()
+    }
+    class BuzzerControl {
+        +void turnOn(int durationMs)
+        +void turnOff()
+        +void beep(int count)
+    }
+    class RobroModbusLib {
+    }
+    class MySQLClient {
+        + static MySQLClient&amp; getInstance()
+        + int64_t add_state_log(...)
+    }
+    class MySQLDataManager {
+        +void setupRollsLog()
+        +void logRollData(...)
+        +void logDefectData(...)
+    }
+    class ReportingNode {
+        +void rollDataCallback(String msg)
+        +void defectDataCallback(String msg)
+    }
+    class SystemStateTracker {
+        +bool changeState(string new_state)
+        +string getCurrentState()
+    }
+    class ComponentStateTrackerLogger {
+        +bool changeState(ComponentState new_state)
+        +string getCurrentState()
+    }
+    class SystemState {
+    }
+    class WeavingInspection {
+        +void clearDetections()
+        +bool isDetectionsAvailable()
+        +void addSystemLog(string severity, string msg, string code)
+    }
+    class SpeedCalculator {
+        +void addPosition(double currentPosition)
+        +double calculateSpeed()
+        +void reset()
+    }
+    class LogUtils {
+        +static LogCode getLogCodeFromString(string codeStr)
+        +static LogSeverity getLogSeverityFromString(string severityStr)
+    }
+    class LogCode {
+    }
+    class LogSeverity {
+    }
+    class LogComponent {
+    }
+    class ComponentState {
+    }
+
+    &lt;&lt;abstract&gt;&gt; EventData
+    &lt;&lt;singleton&gt;&gt; MySQLClient
+
+    EventData &lt;|-- WidthCheck
+    ActionEventManager --&gt; ActionEventTracker
+    ActionEventManager --&gt; EventData
+    ActionEventManager --&gt; EventType
+    EventTypeUtils --&gt; EventType
+    BaseType &lt;|-- Job
+    BaseType &lt;|-- Roll
+    BaseType &lt;|-- RollWidth
+    BaseType &lt;|-- Speed
+    BaseType &lt;|-- Defect
+    BaseType &lt;|-- CameraConfig
+    BaseType &lt;|-- GroupConfig
+    GroupConfig --&gt; CameraConfig : manages (via IDs)
+    CameraHighSpeedSimulator --&gt; RobroCameraAbstractClass : uses
+    CameraManager --&gt; CameraParams
+    CameraManager --&gt; WidthParams
+    CameraNode --&gt; CameraManager
+    CameraNode --&gt; CameraParams
+    CameraNode --&gt; WidthParams
+    CameraNode --&gt; GrabedImage
+    CameraNode --&gt; DefectsProcessor
+    Annotation --&gt; PointXY
+    DefectsProcessor --&gt; Annotation
+    NN --&gt; Group
+    NN --&gt; Yolov8
+    Recipe --&gt; Camera
+    Recipe --&gt; NN
+    PLCCommunication --&gt; RobroModbusLib : uses
+    PLCCommunication --&gt; MySQLClient : logs via
+    ReportingNode --&gt; MySQLDataManager
+    ReportingNode --&gt; Roll
+    ReportingNode --&gt; Defect
+    ReportingNode --&gt; Job
+    ReportingNode --&gt; RollWidth
+    ReportingNode --&gt; Speed
+    SystemStateTracker --&gt; SystemState
+    ComponentStateTrackerLogger --&gt; MySQLClient
+    WeavingInspection --&gt; Recipe
+    WeavingInspection --&gt; ActionEventManager
+    WeavingInspection --&gt; PLCCommunication
+    WeavingInspection --&gt; BuzzerControl
+    WeavingInspection --&gt; RollWidth
+    WeavingInspection --&gt; SpeedCalculator
+    WeavingInspection --&gt; MySQLClient
+    WeavingInspection --&gt; Roll
+    WeavingInspection --&gt; Job
+    WeavingInspection --&gt; Speed
+    WeavingInspection --&gt; ComponentStateTrackerLogger
+    LogUtils --&gt; LogCode
+    LogUtils --&gt; LogSeverity
+    LogUtils --&gt; LogComponent
+    LogUtils --&gt; ComponentState
+
+    style CameraNode fill:#f0fff4,stroke:#228b22,stroke-width:2px
+
+    style ReportingNode fill:#fff5e6,stroke:#ff8c00,stroke-width:2px
+
+    style WeavingInspection fill:#e6f7ff,stroke:#0366d6,stroke-width:2px</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Software Development">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Software Development
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.footer"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
